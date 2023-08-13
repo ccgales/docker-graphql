@@ -24,7 +24,7 @@ jobs:
       run: |
         echo "Iniciando Login"
         winpty docker login
-        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+        docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
         echo "Fin del Login"
 
 #       echo "Iniciando Login"
