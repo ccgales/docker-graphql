@@ -23,7 +23,6 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
         echo "Iniciando Login"
-        winpty docker login
         docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
         echo "Fin del Login"
 
