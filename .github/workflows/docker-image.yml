@@ -37,7 +37,6 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker login -u ccgales
         docker build -t ccgales/docker-graphql:$NEW_VERSION .
         docker build -t ccgales/docker-graphql:latest .
 
